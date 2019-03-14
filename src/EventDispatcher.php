@@ -2,12 +2,15 @@
 
 namespace Sumeeti\TransactionalDispatch;
 
+use Illuminate\Support\Str;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Database\ConnectionInterface;
 use Illuminate\Database\ConnectionResolverInterface;
 use Illuminate\Database\Events\TransactionBeginning;
 use Illuminate\Database\Events\TransactionCommitted;
 use Illuminate\Database\Events\TransactionRolledBack;
+
+use Sumeeti\TransactionalDispatch\Contracts\TransactionalEvent;
 
 class EventDispatcher implements Dispatcher
 {
