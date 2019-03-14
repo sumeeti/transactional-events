@@ -1,0 +1,16 @@
+{
+    "name": "sumeeti/transactional-dispatch",
+    "description": "Handles events, mails, etc. dispatched inside database transactions",
+    "authors": [
+        {
+            "name": "Sumeeti Lalwani",
+            "email": "sumsure@gmail.com"
+        }
+    ],
+    "require": {},
+	"autoload": {
+        "psr-4": {
+            "sumeeti\\TransactionalDispatch\\": "src/"
+        }
+    }
+}
